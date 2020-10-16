@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +13,18 @@
             var NP = window.NP || {};
             NP.assetsJsPath = './assets/js';
             NP.revManifest = {
-                "character-counter.js": "character-counter-12d32ecf5e.js",
-                "dice-roller.js": "dice-roller-cef6695678.js",
-                "facebook.js": "facebook-7c938df1b6.js",
-                "flip-coin.js": "flip-coin-f7b7382f09.js",
-                "helpers.js": "helpers-a364ad6820.js",
-                "init.js": "init-a8b43355f2.js",
-                "name-generator.js": "name-generator-842a461097.js",
-                "name-picker.js": "name-picker-1f8699a264.js",
-                "team-generator.js": "team-generator-77ee88047a.js",
-                "vendor/smooth-scroll.js": "vendor/smooth-scroll-491f03f9fa.js"
+                "helpers.js": "helpers.js",
+                "init.js": "init.js",
+                "name-picker.js": "name-picker.js"
             };
         </script>
-        <script src="./assets/js/helpers-a364ad6820.js" defer></script>
-        <script src="./assets/js/init-a8b43355f2.js" defer></script>
-        <script src="./assets/js/name-picker-1f8699a264.js" defer></script>
+
+        <script src="./assets/js/helpers.js" defer></script>
+        <script src="./assets/js/init.js" defer></script>
+        <script src="./assets/js/name-picker.js" defer></script>
         <base href="/">
     </head>
+
     <body>
         <header>
             <div class="section section--dark">
@@ -84,7 +80,6 @@
                                                             <path fill="currentColor" d="M455.9 13.26c-5.33 2.34-10.86 7.03-13.42 11.08-2.34 3.83-11.5 29.19-20.67 56.03l-16.19 49.21-24.71 7.88c-13.63 4.47-36.43 13.85-50.49 20.88l-25.99 12.78-49.21-24.71c-29.61-14.7-51.98-24.5-55.82-24.5-3.41 0-9.8 1.49-14.06 3.2-9.59 4.05-52.83 46.23-58.37 56.88-7.67 15.13-6.18 20.88 20.24 73.71l24.29 48.57-12.99 26.63c-7.24 14.49-16.62 37.28-20.67 50.28l-7.46 24.07-51.57 17.05c-28.33 9.59-53.9 19.17-56.67 21.3C11.49 451.91 10 459.16 10 500.06c0 34.94.43 38.35 4.69 46.23 2.56 4.47 7.67 10.01 11.29 12.14 3.41 2.13 28.55 11.29 55.39 20.24l49 16.4 8.1 25.35c4.47 13.85 13.64 36 20.45 49.43l12.14 24.07-24.07 48.58c-20.45 41.54-24.07 50.07-24.07 58.59.21 5.54 1.49 12.36 2.98 14.91 1.49 2.77 14.7 17.04 29.19 31.53 28.12 28.12 35.37 32.6 49.43 29.4 3.84-.85 27.91-11.93 53.69-24.71l46.87-23.43 28.76 13.85c15.77 7.67 38.35 17.04 50.06 20.67l21.52 6.6 15.55 47.3c24.5 74.14 22.8 72.43 73.93 73.5 59.86 1.28 59.44 1.7 82.87-69.24l16.83-51.56 21.52-6.6c11.72-3.62 34.3-13 50.28-20.67l28.97-13.85 46.66 23.43c25.57 12.78 49.64 24.07 53.48 24.71 14.27 3.2 23.22-1.71 49.85-27.91 40.9-40.05 40.9-40.48 7.67-106.73l-23.86-47.3 12.99-26.42c7.25-14.49 16.19-36.22 20.03-48.36 3.83-12.14 8.1-23.22 9.38-24.5 1.28-1.49 24.5-9.8 51.77-18.75 27.27-9.16 51.77-18.32 54.54-20.45C988.51 548 990 540.97 990 498.57c0-42.82-1.28-47.93-14.06-56.46-3.41-2.13-28.34-11.5-55.82-20.88l-49.85-17.04-8.31-24.93c-4.48-13.63-13.64-36-20.45-49.43l-12.57-24.29 24.07-47.72c21.09-42.18 23.86-48.79 23.86-58.8.21-6.18-1.07-13.85-2.77-17.04-5.11-9.59-50.7-53.26-59.23-56.88-4.47-1.7-10.86-3.2-14.27-3.2-3.83 0-26.2 9.8-55.6 24.5l-49.43 24.71-24.29-12.14c-13.42-6.6-36-16.19-50.28-21.09l-25.99-8.73-17.26-51.34c-9.37-28.33-18.96-53.47-21.3-56.03C547.07 11.13 537.91 9 499.99 9c-30.03 0-36.42.64-44.09 4.26zm75.2 298.47c38.56 6.82 70.73 23.22 99.71 50.7 95.44 91.4 70.3 249.69-48.79 307-70.73 34.09-154.88 21.09-211.34-32.81-26.63-25.14-42.4-50.7-53.26-85.86-5.11-16.83-5.75-21.94-5.75-51.77s.64-34.94 5.75-51.77c21.52-70.52 75.42-119.94 146.36-134.64 17.05-3.41 50.28-4.04 67.32-.85z"></path>
                                                         </svg>
                                                         Name Picker options
-                
                                                     </span>
                                                 </legend>
                                                 <div class="search-form__item">
@@ -168,33 +163,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="search-form__ads">
-                                  <!-- Name Picker search -->
-                                </div>
-                                <span id="ezoic-pub-ad-placeholder-106" class="ezoic-adpicker-ad"></span>
-                                <span style='background:0 0 !important;display:flex !important;float:none;justify-content:space-between;margin-bottom:2px !important;margin-left:auto !important;margin-right:auto !important;margin-top:15px !important;min-height:250px;min-width:970px;text-align:center !important;width:970px;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-106 ezoic-ad-adaptive' data-ez-name='namepicker_net-medrectangle-4'>
-                                    <span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:15px !important;min-height:250px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-106' data-ez-name='namepicker_net-medrectangle-4'>
-                                        <span id='div-gpt-ad-namepicker_net-medrectangle-4-0' ezaw='323' ezah='250' style='position:relative;z-index:0;display:inline-block;min-height:250px;min-width:323px;' class='ezoic-ad'>
-                                            <script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>
-                                                eval(ez_write_tag([[300, 250], 'namepicker_net-medrectangle-4', 'ezslot_1', 106, '0', '0']));
-                                            </script>
-                                        </span>
-                                    </span>
-                                    <span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:15px !important;min-height:250px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-106' data-ez-name='namepicker_net-medrectangle-4'>
-                                        <span id='div-gpt-ad-namepicker_net-medrectangle-4-0_1' ezaw='323' ezah='250' style='position:relative;z-index:0;display:inline-block;min-height:250px;min-width:323px;' class='ezoic-ad'>
-                                            <script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>
-                                                eval(ez_write_tag([[300, 250], 'namepicker_net-medrectangle-4', 'ezslot_2', 106, '0', '1']));
-                                            </script>
-                                        </span>
-                                    </span>
-                                    <span style='display:block !important;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:15px !important;min-height:250px;min-width:300px;text-align:center !important;' class='ezoic-ad medrectangle-4 adtester-container adtester-container-106' data-ez-name='namepicker_net-medrectangle-4'>
-                                        <span id='div-gpt-ad-namepicker_net-medrectangle-4-0_2' ezaw='323' ezah='250' style='position:relative;z-index:0;display:inline-block;min-height:250px;min-width:323px;' class='ezoic-ad'>
-                                            <script data-ezscrex='false' data-cfasync='false' type='text/javascript' style='display:none;'>
-                                                eval(ez_write_tag([[300, 250], 'namepicker_net-medrectangle-4', 'ezslot_3', 106, '0', '2']));
-                                            </script>
-                                        </span>
-                                    </span>
-                                </span>
+
                             </div>
 
                             <div class="section__content full-height">
@@ -225,5 +194,6 @@
                 </ul>
             </div>
         </footer>
+
     </body>
 </html>

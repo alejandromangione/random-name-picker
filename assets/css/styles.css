@@ -502,93 +502,6 @@ a {
   background-color: #0c59b6
 }
 
-.facebook-auth__button {
-  display: none;
-  background-color: #4267b2;
-  color: #fff;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-family: Helvetica,Arial,sans-serif;
-  letter-spacing: .25px;
-  overflow: hidden;
-  text-align: center;
-  padding: .5rem 1.5rem .5rem .5rem;
-  border-radius: .25rem;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto
-}
-
-.facebook-auth__button * {
-  pointer-events: none
-}
-
-.facebook-auth__button svg {
-  margin-right: 1rem;
-  height: 1.5rem;
-  width: 1.5rem
-}
-
-.facebook-auth__button.is-visible {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex
-}
-
-.facebook-auth__settings {
-  display: none;
-  font-weight: 700;
-  font-size: .875rem;
-  margin-top: 1rem;
-  padding: .5rem 0
-}
-
-.facebook-auth__settings.is-visible {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex
-}
-
-.facebook-auth__message {
-  margin-top: .5rem
-}
-
-.facebook-auth__info {
-  display: block;
-  margin-top: .5rem
-}
-
-.post-content h2 {
-  font-size: 1.5rem
-}
-
-.post-content h2,.post-content h3,.post-content p,.post-content ul {
-  margin-bottom: 1rem
-}
-
-.post-content ul {
-  padding-left: 1.25rem;
-  list-style: disc
-}
-
-.post-content ul li {
-  padding-bottom: .5rem
-}
-
-.post-content a {
-  color: #484848;
-  border-bottom: .0625rem solid
-}
-
-.post-content a:hover {
-  color: #0c59b6
-}
-
-.post-content a:focus {
-  outline: .125rem dotted currentColor;
-  outline-offset: .375rem
-}
-
 .search-form .is-hidden {
   display: none
 }
@@ -815,10 +728,6 @@ a {
   .results__settings-image {
       max-width:10rem
   }
-}
-
-.results__intro,.results__item {
-  margin-bottom: 1rem
 }
 
 .results__item {
@@ -1169,12 +1078,4 @@ a {
       height:5rem;
       width: 5rem
   }
-}
-
-.coin--heads {
-  background-image: url(/assets/images/heads.png)
-}
-
-.coin--tails {
-  background-image: url(/assets/images/tails.png)
 }

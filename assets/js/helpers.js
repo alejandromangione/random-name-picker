@@ -1,4 +1,5 @@
 "use strict";
+
 !function(e) {
     var s = window.NP;
     s.sendGaEvent = function(e, t, n, o) {
@@ -10,68 +11,6 @@
             o && (r.value = o),
             gtag("event", e, r)
         }
-    }
-    ,
-    s.fbSettings = {
-        appId: "916895771682278",
-        autoLogAppEvents: !0,
-        cookie: !0,
-        xfbml: !0,
-        version: "v6.0"
-    },
-    s.loadFbSdkScript = function() {
-        var e, t, n, o, r;
-        e = document,
-        t = "script",
-        n = "facebook-jssdk",
-        o = void 0,
-        r = e.getElementsByTagName(t)[0],
-        e.getElementById(n) || ((o = e.createElement(t)).id = n,
-        o.src = "https://connect.facebook.net/en_US/sdk.js",
-        r.parentNode.insertBefore(o, r))
-    }
-    ,
-    s.fbInit = function(t) {
-        window.fbAsyncInit = function() {
-            "undefined" != typeof FB && (FB.init(s.fbSettings),
-            t && FB.getLoginStatus(function(e) {
-                t(e)
-            }))
-        }
-        ,
-        s.loadFbSdkScript()
-    }
-    ,
-    s.ajaxGet = function(e, t, n) {
-        var o = 3 < arguments.length && void 0 !== arguments[3] ? arguments[3] : null
-          , r = s.toQueryString(t)
-          , a = "" !== r ? e + "?" + r : e
-          , i = new XMLHttpRequest;
-        return i.open("GET", a, !0),
-        i.onload = function() {
-            200 <= i.status && i.status < 400 ? n(i.responseText) : o && o(i)
-        }
-        ,
-        i.onerror = function(e) {
-            o && o(e)
-        }
-        ,
-        i.send(),
-        i
-    }
-    ,
-    s.parseJsonString = function(e) {
-        try {
-            return JSON.parse(e)
-        } catch (e) {
-            return !1
-        }
-    }
-    ,
-    s.toQueryString = function(t) {
-        return "string" == typeof t ? t : Object.keys(t).map(function(e) {
-            return encodeURIComponent(e) + "=" + encodeURIComponent(t[e])
-        }).join("&")
     }
     ,
     s.loadScript = function(e) {
@@ -118,14 +57,6 @@
             behavior: n
         };
         window.scrollTo(o)
-    }
-    ,
-    s.sortByNameAcs = function(e, r) {
-        return e.sort(function(e, t) {
-            var n = e[r].toLowerCase()
-              , o = t[r].toLowerCase();
-            return n < o ? -1 : o < n ? 1 : 0
-        })
     }
     ,
     s.removeElem = function(e) {
