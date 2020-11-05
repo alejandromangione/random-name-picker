@@ -32,13 +32,14 @@
     }
     ,
     s.loadJs = function(e, t) {
-        var n = document.getElementsByTagName("script")[0]
-          , o = document.createElement("script");
+        var n = document.getElementsByTagName("script")[0];
+        var o = document.createElement("script");
+
         return o.src = e,
-        o.async = !0,
+        o.async = true,
         n.parentNode.insertBefore(o, n),
         t && "function" == typeof t && (o.onload = t),
-        o
+        o;
     }
     ,
     s.getElementPosition = function(e) {
